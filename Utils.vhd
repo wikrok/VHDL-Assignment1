@@ -25,8 +25,8 @@ package body Utils is
 		return T;
 	end;
 	
-	function Cvonvert (B: BIT_VECTOR) return NATURAL is
-		variable T:BIT_VECTOR(B'LEGNTH-1 downto 0) := B;
+	function Convert (B: BIT_VECTOR) return NATURAL is
+		variable T:BIT_VECTOR(B'LENGTH-1 downto 0) := B;
 		variable V:NATURAL := 0;
 		begin for i in T'RIGHT to T'LEFT loop
 			if T(i) = '1' then V:= V + (2**i);

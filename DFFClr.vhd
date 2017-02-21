@@ -30,7 +30,7 @@ entity DFFClr is
 end;
 
 architecture Behave of DFFClr is
-	signal Qi : BIT := 0; 		-- Flip flop's internal "storage". Had to be initialised.
+	signal Qi : BIT; 		-- Flip flop's internal "storage". Does this have to be initialised?
 begin 
 	QB <= not Qi; 		-- Sets the outputs according to the current state of Qi.
 	Q <= Qi;

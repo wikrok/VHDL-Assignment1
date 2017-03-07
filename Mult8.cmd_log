@@ -1,0 +1,17 @@
+vhdtdtfi -lib work Utils.vhd -lib work Clock_Utils.vhd -lib work Mult_Components.vhd -lib work Full_Adder.vhd -lib work DFFClr.vhd -lib work SM_1.vhd -lib work ShiftN.vhd -lib work Register8.vhd -lib work Mux8.vhd -lib work AllZero.vhd -lib work Adder8.vhd -lib work Mult8.vhd -prj Assignment1a -o Mult8.spl -module Mult8 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work Utils.vhd -lib work Clock_Utils.vhd -lib work Mult_Components.vhd -lib work Full_Adder.vhd -lib work DFFClr.vhd -lib work SM_1.vhd -lib work ShiftN.vhd -lib work Register8.vhd -lib work Mux8.vhd -lib work AllZero.vhd -lib work Adder8.vhd -lib work Mult8.vhd -prj Assignment1a -o Mult8.spl -module Mult8 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex7 Mult8.spl {C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.sym} 
+xst -intstyle ise -ifn "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.xst" -ofn "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7vx485t-ffg1761-2 "Mult8.ngc" Mult8.ngd  
+map -intstyle ise -p xc7vx485t-ffg1761-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult8_map.ncd Mult8.ngd Mult8.pcf 
+xst -intstyle ise -ifn "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.xst" -ofn "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 "Mult8.ngc" Mult8.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mult8_map.ncd Mult8.ngd Mult8.pcf 
+par -w -intstyle ise -ol high -mt off Mult8_map.ncd Mult8.ncd Mult8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Mult8.twx Mult8.ncd -o Mult8.twr Mult8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Mult8_preroute.twx Mult8_map.ncd -o Mult8_preroute.twr Mult8.pcf 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm Adder8 -w -dir netgen/translate -ofmt vhdl -sim Mult8.ngd Adder8_translate.vhd 
+ibiswriter -intstyle ise -vccaux 2.5 -truncate 20 Mult8.ncd Adder8.ibs 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult8.ucf -p xc6slx16-csg324-2 "Mult8.ngc" Mult8.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mult8_map.ncd Mult8.ngd Mult8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Mult8_preroute.twx Mult8_map.ncd -o Mult8_preroute.twr Mult8.pcf -ucf Mult8.ucf 

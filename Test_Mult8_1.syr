@@ -1,0 +1,163 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Test_Mult8_1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Test_Mult8_1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Test_Mult8_1"
+Output Format                      : NGC
+Target Device                      : xc7vx485t-2-ffg1761
+
+---- Source Options
+Top Module Name                    : Test_Mult8_1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Utils.vhd" into library work
+Parsing package <Utils>.
+Parsing package body <Utils>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Clock_Utils.vhd" into library work
+Parsing package <Clock_Utils>.
+Parsing package body <Clock_Utils>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult_Components.vhd" into library work
+Parsing package <Mult_Components>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Full_Adder.vhd" into library work
+Parsing entity <Full_Adder>.
+Parsing architecture <Behave> of entity <full_adder>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\DFFClr.vhd" into library work
+Parsing entity <DFFClr>.
+Parsing architecture <Behave> of entity <dffclr>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\SM_1.vhd" into library work
+Parsing entity <SM_1>.
+Parsing architecture <Moor> of entity <sm_1>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\ShiftN.vhd" into library work
+Parsing entity <ShiftN>.
+Parsing architecture <Behave> of entity <shiftn>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" into library work
+Parsing entity <Register8>.
+Parsing architecture <Structure> of entity <register8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mux8.vhd" into library work
+Parsing entity <Mux8>.
+Parsing architecture <Behave> of entity <mux8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\AllZero.vhd" into library work
+Parsing entity <AllZero>.
+Parsing architecture <Behave> of entity <allzero>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Adder8.vhd" into library work
+Parsing entity <Adder8>.
+Parsing architecture <Structure> of entity <adder8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult8.vhd" into library work
+Parsing entity <Mult8>.
+Parsing architecture <Structure> of entity <mult8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Test_Mult8_1.vhd" into library work
+Parsing entity <Test_Mult8_1>.
+Parsing architecture <Structure> of entity <test_mult8_1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Test_Mult8_1> (architecture <Structure>) from library <work>.
+WARNING:HDLCompiler:811 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Clock_Utils.vhd" Line 20: Synthesis ignores all but the first waveform
+ERROR:HDLCompiler:890 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Clock_Utils.vhd" Line 21: wait statement without UNTIL clause not supported for synthesis
+ERROR:HDLCompiler:891 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Clock_Utils.vhd" Line 21: wait statements in subprograms are not supported for synthesis
+Netlist Test_Mult8_1(Structure) remains a blackbox, due to errors in its contents
+--> 
+
+Total memory usage is 292608 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

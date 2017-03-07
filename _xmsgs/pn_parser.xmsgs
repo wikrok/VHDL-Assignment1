@@ -8,22 +8,40 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/TEMP.EETECH.000/Desktop/VHDL/Assignment1a/Mult8.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Adder8.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/TEMP.EETECH.000/Desktop/VHDL/Assignment1a/Mult8.vhd</arg>&quot; Line <arg fmt="%d" index="2">38</arg>. <arg fmt="%s" index="3">Syntax error near &quot;SRA&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/AllZero.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/TEMP.EETECH.000/Desktop/VHDL/Assignment1a/Mult8.vhd</arg>&quot; Line <arg fmt="%d" index="2">46</arg>. <arg fmt="%s" index="3">Syntax error near &quot;SRA&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Clock_Utils.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/TEMP.EETECH.000/Desktop/VHDL/Assignment1a/Mult8.vhd</arg>&quot; Line <arg fmt="%d" index="2">48</arg>. <arg fmt="%s" index="3">Syntax error near &quot;SRA&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/DFFClr.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/TEMP.EETECH.000/Desktop/VHDL/Assignment1a/Mult8.vhd</arg>&quot; Line <arg fmt="%d" index="2">52</arg>. <arg fmt="%s" index="3">Syntax error near &quot;SRA&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Full_Adder.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/TEMP.EETECH.000/Desktop/VHDL/Assignment1a/Mux8.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult_Components.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mux8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Register8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/SM_1.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/ShiftN.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Utils.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

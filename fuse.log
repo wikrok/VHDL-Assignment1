@@ -1,27 +1,27 @@
-Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/VHDL-Assignment1-master/Test_Mult8_1_isim_beh.exe -prj D:/VHDL-Assignment1-master/Test_Mult8_1_beh.prj work.Test_Mult8_1 
-ISim P.20131013 (signature 0x8ef4fb42)
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Mult8_1_isim_beh.exe -prj C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Mult8_1_beh.prj work.Test_Mult8_1 
+ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/VHDL-Assignment1-master/Utils.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Clock_Utils.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Mult_Components.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Full_Adder.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/DFFClr.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/SM_1.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/ShiftN.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Register8.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Mux8.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/AllZero.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Adder8.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Mult8.vhd" into library work
-Parsing VHDL file "D:/VHDL-Assignment1-master/Test_Mult8_1.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Utils.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Clock_Utils.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult_Components.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Full_Adder.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/DFFClr.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/SM_1.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/ShiftN.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Register8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mux8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/AllZero.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Adder8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Mult8_1.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 104876 KB
-Fuse CPU Usage: 218 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package textio
+Compiling package std_logic_textio
 Compiling package utils
 Compiling package clock_utils
 Compiling package mult_components
@@ -36,8 +36,8 @@ Compiling architecture moor of entity SM_1 [\SM_1(1000)\]
 Compiling architecture structure of entity Mult8 [mult8_default]
 Compiling architecture structure of entity test_mult8_1
 Time Resolution for simulation is 1ps.
-Waiting for 6 sub-compilation(s) to finish...
-Compiled 24 VHDL Units
-Built simulation executable D:/VHDL-Assignment1-master/Test_Mult8_1_isim_beh.exe
-Fuse Memory Usage: 122396 KB
-Fuse CPU Usage: 280 ms
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 26 VHDL Units
+Built simulation executable C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Mult8_1_isim_beh.exe
+Fuse Memory Usage: 30132 KB
+Fuse CPU Usage: 749 ms

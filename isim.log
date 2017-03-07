@@ -1,48 +1,284 @@
 ISim log file
-Running: D:\VHDL-Assignment1-master\Test_Mult8_1_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/VHDL-Assignment1-master/Test_Mult8_1_isim_beh.wdb 
-ISim P.20131013 (signature 0x8ef4fb42)
-----------------------------------------------------------------------
-INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@flexlm3.eps.surrey.ac.uk'.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to '2100@flexlm3.eps.surrey.ac.uk'.
-WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
-WARNING:Security:44 - Since no license file was found,
-       please run the Xilinx License Configuration Manager
-       (xlcm or "Manage Xilinx Licenses")
-       to assist in obtaining a license.
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
+Running: C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Test_Mult8_1_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Mult8_1_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 561021740 ns : File "D:/VHDL-Assignment1-master/DFFClr.vhd" Line 39
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 55451740 ns : File "D:/VHDL-Assignment1-master/ShiftN.vhd" Line 51
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 29069640 ns : File "D:/VHDL-Assignment1-master/DFFClr.vhd" Line 39
-# run all
-Stopped at time : 91582870 ns : File "D:/VHDL-Assignment1-master/ShiftN.vhd" Line 51
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 21053690 ns : File "D:/VHDL-Assignment1-master/DFFClr.vhd" Line 42
-# restart
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
 # run 1.00us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000001
+# run 1.00us
+00000010
+00000011
+00000100
+00000101
+00000110
+00000111
+# run 1.00us
+00001000
+00001001
+00001010
+00001011
+00001100
+00001101
+00001110
+# run 1.00us
+00001111
+00000000
+00000010
+00000100
+00000110
+# run 1.00us
+00001000
+00001010
+00001100
+00001110
+00010000
+# run 1.00us
+00010010
+00010100
+00010110
+00011000
+00011010
+# run 10.00us
+00011100
+00011110
+00000000
+00000011
+00000110
+00001001
+00001100
+00001111
+00010010
+00010101
+00011000
+00011011
+00011110
+00100001
+00100100
+00100111
+00101010
+00101101
+00000000
+00000100
+00001000
+00001100
+00010000
+00010100
+00011000
+00011100
+00100000
+00100100
+00101000
+00101100
+00110000
+00110100
+00111000
+00111100
+00000000
+00000101
+00001010
+00001111
+00010100
+00011001
+00011110
+00100011
+# run 10.00us
+00101000
+00101101
+00110010
+00110111
+00111100
+01000001
+01000110
+01001011
+00000000
+00000110
+00001100
+00010010
+00011000
+00011110
+00100100
+00101010
+00110000
+00110110
+00111100
+01000010
+01001000
+01001110
+01010100
+01011010
+00000000
+00000111
+00001110
+00010101
+00011100
+00100011
+00101010
+00110001
+00111000
+00111111
+01000110
+01001101
+01010100
+01011011
+# run 10.00us
+01100010
+01101001
+00000000
+00001000
+00010000
+00011000
+00100000
+00101000
+00110000
+00111000
+01000000
+01001000
+01010000
+01011000
+01100000
+01101000
+01110000
+01111000
+00000000
+00001001
+00010010
+00011011
+00100100
+00101101
+00110110
+00111111
+01001000
+01010001
+01011010
+01100011
+01101100
+01110101
+01111110
+10000111
+# run 10.00us
+00000000
+00001010
+00010100
+00011110
+00101000
+00110010
+00111100
+01000110
+01010000
+01011010
+01100100
+01101110
+01111000
+10000010
+10001100
+10010110
+00000000
+00001011
+00010110
+00100001
+00101100
+00110111
+01000010
+01001101
+01011000
+01100011
+01101110
+01111001
+10000100
+10001111
+10011010
+10100101
+00000000
+# run 10.00us
+00001100
+00011000
+00100100
+00110000
+00111100
+01001000
+01010100
+01100000
+01101100
+01111000
+10000100
+10010000
+10011100
+10101000
+10110100
+00000000
+00001101
+00011010
+00100111
+00110100
+01000001
+01001110
+01011011
+01101000
+01110101
+10000010
+10001111
+10011100
+10101001
+10110110
+11000011
+00000000
+# run 10.00us
+00001110
+00011100
+00101010
+00111000
+01000110
+01010100
+01100010
+01110000
+01111110
+10001100
+10011010
+10101000
+10110110
+11000100
+11010010
+00000000
+00001111
+00011110
+00101101
+00111100
+01001011
+01011010
+01101001
+01111000
+10000111
+10010110
+10100101
+10110100
+11000011
+11010010
+# run 10.00us
+11100001
+# run 10.00us
+# run 10.00us

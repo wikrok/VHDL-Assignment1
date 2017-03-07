@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Utils.vhd -lib work Clock_Utils.vhd -lib work Mult_Components.vhd -lib work ShiftN.vhd -prj Assignment1a -o ShiftN.spl -module ShiftN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work Utils.vhd -lib work Clock_Utils.vhd -lib work Mult_Components.vhd -lib work ShiftN.vhd -prj Assignment1a -o ShiftN.spl -module ShiftN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex7 ShiftN.spl {C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/ShiftN.sym} 

@@ -35,11 +35,13 @@ end;
 architecture Moor of SM_1 is
 	type STATETYPE is (I, C, A, S, E);
 	signal State: STATETYPE;
+	signal StateC: BIT;
 begin
 	Init  <= '1' after TPD when State = I else '0' after TPD;
 	Add   <= '1' after TPD when State = A else '0' after TPD;
 	Shift <= '1' after TPD when State = S else '0' after TPD;
 	Done  <= '1' after TPD when State = E else '0' after TPD;
+	StateC <= '1' after TPD when State = C else '0' after TPD; -- Debug signal for when in state c.
 process (CLK, Reset) begin
 	if Reset = '1' then 
 		State <= E;

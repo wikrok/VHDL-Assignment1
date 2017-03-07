@@ -1,0 +1,10 @@
+[Inputs]
+Start
+CLK
+Reset
+=A[3:0]=
+=B[3:0]=
+[Outputs]
+Done
+=Result[7:0]=
+[BiDir]

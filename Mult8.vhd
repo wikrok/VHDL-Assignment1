@@ -36,8 +36,8 @@ begin
 	Regclr <= Init or Reset;
 	Result <= REGout;
 	
-	SR1 : ShiftN port map(CLK=>CLK, CLR=>Reset, LD=>Init, SH=>Shift, DIR=>Low, D=>A, Q=>ASR);
-	SR2 : ShiftN port map(CLK=>CLK, CLR=>Reset, LD=>Init, SH=>Shift, DIR=>High, D=>B, Q=>BSR);
+	SR1 : ShiftN port map(CLK=>CLK, CLR=>Reset, LoaD=>Init, SH=>Shift, DIR=>Low, D=>A, Q=>ASR);
+	SR2 : ShiftN port map(CLK=>CLK, CLR=>Reset, LoaD=>Init, SH=>Shift, DIR=>High, D=>B, Q=>BSR);
 	Z1 : AllZero port map(X=>ASR, F=>Zero);
 	A1 : Adder8 port map(A=>BSR, B=>REGout, Cin=>Low, Cout=>OFL, Sum=>ADDout);
 	M1 : Mux8 port map(A=>ADDout, B=>Regout, Sel=>Add, Y=>MUXout);

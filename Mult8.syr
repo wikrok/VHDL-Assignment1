@@ -1,0 +1,581 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Mult8.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Mult8.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Mult8"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : Mult8
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Utils.vhd" into library work
+Parsing package <Utils>.
+Parsing package body <Utils>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Clock_Utils.vhd" into library work
+Parsing package <Clock_Utils>.
+Parsing package body <Clock_Utils>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult_Components.vhd" into library work
+Parsing package <Mult_Components>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Full_Adder.vhd" into library work
+Parsing entity <Full_Adder>.
+Parsing architecture <Behave> of entity <full_adder>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\DFFClr.vhd" into library work
+Parsing entity <DFFClr>.
+Parsing architecture <Behave> of entity <dffclr>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\SM_1.vhd" into library work
+Parsing entity <SM_1>.
+Parsing architecture <Moor> of entity <sm_1>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\ShiftN.vhd" into library work
+Parsing entity <ShiftN>.
+Parsing architecture <Behave> of entity <shiftn>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" into library work
+Parsing entity <Register8>.
+Parsing architecture <Structure> of entity <register8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mux8.vhd" into library work
+Parsing entity <Mux8>.
+Parsing architecture <Behave> of entity <mux8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\AllZero.vhd" into library work
+Parsing entity <AllZero>.
+Parsing architecture <Behave> of entity <allzero>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Adder8.vhd" into library work
+Parsing entity <Adder8>.
+Parsing architecture <Structure> of entity <adder8>.
+Parsing VHDL file "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult8.vhd" into library work
+Parsing entity <Mult8>.
+Parsing architecture <Structure> of entity <mult8>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Mult8> (architecture <Structure>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult8.vhd" Line 32: Using initial value '0' for low since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult8.vhd" Line 33: Using initial value '1' for high since it is never assigned
+
+Elaborating entity <ShiftN> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <AllZero> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Adder8> (architecture <Structure>) from library <work>.
+
+Elaborating entity <Full_Adder> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Mux8> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Register8> (architecture <Structure>) from library <work>.
+
+Elaborating entity <DFFClr> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <SM_1> (architecture <Moor>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\SM_1.vhd" Line 44: Assignment to statec ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Mult8>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult8.vhd".
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mult8.vhd" line 42: Output port <Cout> of the instance <A1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mult8> synthesized.
+
+Synthesizing Unit <ShiftN>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\ShiftN.vhd".
+    Found 8-bit register for signal <Q>.
+    Found 8-bit register for signal <Shift.St>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <ShiftN> synthesized.
+
+Synthesizing Unit <AllZero>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\AllZero.vhd".
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <AllZero> synthesized.
+
+Synthesizing Unit <Adder8>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Adder8.vhd".
+    Summary:
+	no macro.
+Unit <Adder8> synthesized.
+
+Synthesizing Unit <Full_Adder>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Full_Adder.vhd".
+    Summary:
+Unit <Full_Adder> synthesized.
+
+Synthesizing Unit <Mux8>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Mux8.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8> synthesized.
+
+Synthesizing Unit <Register8>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd".
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[7].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[6].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[5].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[4].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[3].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[2].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[1].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[0].FF> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Register8> synthesized.
+
+Synthesizing Unit <DFFClr>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\DFFClr.vhd".
+    Found 1-bit register for signal <Qi>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFFClr> synthesized.
+
+Synthesizing Unit <SM_1>.
+    Related source file is "C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master\SM_1.vhd".
+    Found 3-bit register for signal <State>.
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | e                                              |
+    | Power Up State     | i                                              |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <SM_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 12
+ 1-bit register                                        : 8
+ 8-bit register                                        : 4
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 7
+# FSMs                                                 : 1
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 7
+# FSMs                                                 : 1
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <State[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ i     | 001
+ c     | 010
+ a     | 100
+ s     | 011
+ e     | 000
+-------------------
+INFO:Xst:2261 - The FF/Latch <Shift.St_1> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_1> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_2> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_2> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_3> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_3> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_4> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_4> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_5> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_5> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_0> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_0> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_6> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_6> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_7> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_7> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    F1/State_FSM_FFd3 in unit <Mult8>
+
+
+Optimizing unit <Register8> ...
+
+Optimizing unit <Mult8> ...
+
+Optimizing unit <ShiftN> ...
+
+Optimizing unit <Adder8> ...
+WARNING:Xst:1293 - FF/Latch <SR1/Shift.St_7> has a constant value of 0 in block <Mult8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SR1/Shift.St_6> has a constant value of 0 in block <Mult8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SR1/Shift.St_5> has a constant value of 0 in block <Mult8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SR1/Shift.St_4> has a constant value of 0 in block <Mult8>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Mult8, actual ratio is 0.
+WARNING:Xst:1426 - The value init of the FF/Latch F1/State_FSM_FFd3_LD hinder the constant cleaning in the block Mult8.
+   You should achieve better results by setting this init to 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Mult8.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 36
+#      GND                         : 1
+#      LUT3                        : 2
+#      LUT4                        : 5
+#      LUT5                        : 14
+#      LUT6                        : 14
+# FlipFlops/Latches                : 25
+#      FD                          : 1
+#      FDC                         : 23
+#      LD                          : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 10
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              25  out of  18224     0%  
+ Number of Slice LUTs:                   35  out of   9112     0%  
+    Number used as Logic:                35  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:      12  out of     37    32%  
+   Number with an unused LUT:             2  out of     37     5%  
+   Number of fully used LUT-FF pairs:    23  out of     37    62%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    232     8%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 24    |
+Reset                              | IBUF+BUFG              | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.179ns (Maximum Frequency: 239.292MHz)
+   Minimum input arrival time before clock: 4.596ns
+   Maximum output required time after clock: 6.011ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.179ns (frequency: 239.292MHz)
+  Total number of paths / destination ports: 214 / 32
+-------------------------------------------------------------------------
+Delay:               4.179ns (Levels of Logic = 3)
+  Source:            R1/STAGES[1].FF/Qi (FF)
+  Destination:       R1/STAGES[7].FF/Qi (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: R1/STAGES[1].FF/Qi to R1/STAGES[7].FF/Qi
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   1.042  R1/STAGES[1].FF/Qi (R1/STAGES[1].FF/Qi)
+     LUT4:I0->O            5   0.254   1.069  A1/Stages[2].OtherBits.FA/Mxor_Sum_xo<0>21 (A1/Stages[2].OtherBits.FA/Mxor_Sum_xo<0>2)
+     LUT5:I2->O            2   0.235   0.726  A1/Stages[6].OtherBits.FA/Mxor_Sum_xo<0>11 (A1/Stages[6].OtherBits.FA/Mxor_Sum_xo<0>1)
+     LUT6:I5->O            1   0.254   0.000  M1/Mmux_Y81 (MUXout<7>)
+     FDC:D                     0.074          R1/STAGES[7].FF/Qi
+    ----------------------------------------
+    Total                      4.179ns (1.342ns logic, 2.837ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              4.596ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       R1/STAGES[7].FF/Qi (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Reset to R1/STAGES[7].FF/Qi
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.328   1.612  Reset_IBUF (Reset_IBUF)
+     LUT5:I0->O            8   0.254   0.943  REGclr1 (REGclr)
+     FDC:CLR                   0.459          R1/STAGES[0].FF/Qi
+    ----------------------------------------
+    Total                      4.596ns (2.041ns logic, 2.555ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 12 / 9
+-------------------------------------------------------------------------
+Offset:              6.011ns (Levels of Logic = 2)
+  Source:            F1/State_FSM_FFd2 (FF)
+  Destination:       Done (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: F1/State_FSM_FFd2 to Done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.525   1.639  F1/State_FSM_FFd2 (F1/State_FSM_FFd2)
+     LUT5:I0->O            1   0.254   0.681  F1/State_Done1 (Done_OBUF)
+     OBUF:I->O                 2.912          Done_OBUF (Done)
+    ----------------------------------------
+    Total                      6.011ns (3.691ns logic, 2.320ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Reset'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.676ns (Levels of Logic = 2)
+  Source:            F1/State_FSM_FFd3_LD (LATCH)
+  Destination:       Done (PAD)
+  Source Clock:      Reset falling
+
+  Data Path: F1/State_FSM_FFd3_LD to Done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              11   0.581   1.267  F1/State_FSM_FFd3_LD (F1/State_FSM_FFd3_LD)
+     LUT5:I2->O            1   0.235   0.681  F1/State_Done1 (Done_OBUF)
+     OBUF:I->O                 2.912          Done_OBUF (Done)
+    ----------------------------------------
+    Total                      5.676ns (3.728ns logic, 1.948ns route)
+                                       (65.7% logic, 34.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.179|         |         |         |
+Reset          |         |    3.552|         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.45 secs
+ 
+--> 
+
+Total memory usage is 280520 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

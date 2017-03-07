@@ -1,0 +1,24 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\phil\Dropbox\Uni\3rd Year\VHDL\VHDL-Assignment1-master
+#Date/Time:
+#:T   Mon Mar 06 17:45:37 2017
+#------------------------------
+	#Reading Mult8.ncd...
+	#Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "Mult8" is an NCD, version 3.2, device xc6slx16, package csg324, speed -2
+	#Design creation date: 2017.03.06.17.44.50
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+post attr
+	#Getting available speed grades of the device...
+	#4
+unpost main

@@ -25,7 +25,7 @@ package Mult_Components is
 		Clk,Clr:BIT; Q:out BIT_VECTOR(7 downto 0));
 	end component;
 
-	component ShiftN port (CLK,CLR,LD,SH,DIR:BIT;D:BIT_VECTOR; Q:out BIT_VECTOR);
+	component ShiftN port (CLK,CLR,LoaD,SH,DIR:BIT;D:BIT_VECTOR; Q:out BIT_VECTOR);
 	end component;
 
 	component SM_1 port (Start, CLK, LSB, Stop, Reset: BIT;

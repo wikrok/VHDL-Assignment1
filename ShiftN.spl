@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+CLR
+LoaD
+SH
+DIR
+D
+[Outputs]
+Q
+[BiDir]

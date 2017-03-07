@@ -69,6 +69,10 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SM_1_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="ShiftN.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ShiftN.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Adder16_1_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Adder16_1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_Adder16_1_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Adder16_1_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Test_Mult8_1.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Test_Mult8_1.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Mult8_1.prj"/>
@@ -104,10 +108,12 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1488823712" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1488823712">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488823712" xil_pn:in_ck="8378834872683845734" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488895105" xil_pn:in_ck="2181801410192085507" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1488895105">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Adder16.vhd"/>
       <outfile xil_pn:name="Adder8.vhd"/>
       <outfile xil_pn:name="AllZero.vhd"/>
       <outfile xil_pn:name="Clock_Utils.vhd"/>
@@ -119,14 +125,15 @@
       <outfile xil_pn:name="Register8.vhd"/>
       <outfile xil_pn:name="SM_1.vhd"/>
       <outfile xil_pn:name="ShiftN.vhd"/>
+      <outfile xil_pn:name="Test_Adder16_1.vhd"/>
       <outfile xil_pn:name="Test_Mult8_1.vhd"/>
       <outfile xil_pn:name="Utils.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1488823712" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2095968187726616608" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488895013" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6929265340444449267" xil_pn:start_ts="1488895013">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488823712" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="505969614679731358" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488895013" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3143489252772000907" xil_pn:start_ts="1488895013">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -134,9 +141,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488823712" xil_pn:in_ck="8378834872683845734" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488895108" xil_pn:in_ck="2181801410192085507" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1488895108">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Adder16.vhd"/>
       <outfile xil_pn:name="Adder8.vhd"/>
       <outfile xil_pn:name="AllZero.vhd"/>
       <outfile xil_pn:name="Clock_Utils.vhd"/>
@@ -148,32 +156,34 @@
       <outfile xil_pn:name="Register8.vhd"/>
       <outfile xil_pn:name="SM_1.vhd"/>
       <outfile xil_pn:name="ShiftN.vhd"/>
+      <outfile xil_pn:name="Test_Adder16_1.vhd"/>
       <outfile xil_pn:name="Test_Mult8_1.vhd"/>
       <outfile xil_pn:name="Utils.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1488823717" xil_pn:in_ck="8378834872683845734" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7764846728816442209" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488895112" xil_pn:in_ck="2181801410192085507" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3926020714307465959" xil_pn:start_ts="1488895108">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_Mult8_1_beh.prj"/>
-      <outfile xil_pn:name="Test_Mult8_1_isim_beh.exe"/>
+      <outfile xil_pn:name="Test_Adder16_1_beh.prj"/>
+      <outfile xil_pn:name="Test_Adder16_1_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1488823717" xil_pn:in_ck="4483317411250313536" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7074727935024536172" xil_pn:start_ts="1488823717">
+    <transform xil_pn:end_ts="1488895113" xil_pn:in_ck="1580913737079535021" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6573028011263932550" xil_pn:start_ts="1488895112">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_Mult8_1_isim_beh.wdb"/>
+      <outfile xil_pn:name="Test_Adder16_1_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1488822270" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1488822270">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1488822270" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6900255889332379729" xil_pn:start_ts="1488822270">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -203,7 +213,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Mult8.lso"/>
       <outfile xil_pn:name="Mult8.ngc"/>
@@ -225,6 +238,7 @@
     <transform xil_pn:end_ts="1488823027" xil_pn:in_ck="3403678791868393670" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3945672326304230072" xil_pn:start_ts="1488823021">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Mult8.bld"/>
       <outfile xil_pn:name="Mult8.ngd"/>
       <outfile xil_pn:name="Mult8_ngdbuild.xrpt"/>
@@ -234,6 +248,7 @@
     <transform xil_pn:end_ts="1488823037" xil_pn:in_ck="3403725203352795623" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1488823027">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Mult8.pcf"/>
       <outfile xil_pn:name="Mult8_map.map"/>
       <outfile xil_pn:name="Mult8_map.mrp"/>
@@ -248,6 +263,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Mult8.ncd"/>
@@ -288,6 +304,7 @@
     <transform xil_pn:end_ts="1488823042" xil_pn:in_ck="-719592857665523168" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="722859607460791352" xil_pn:start_ts="1488823037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Mult8_preroute.twr"/>
       <outfile xil_pn:name="Mult8_preroute.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -296,6 +313,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/translate/Adder8_translate.nlf"/>

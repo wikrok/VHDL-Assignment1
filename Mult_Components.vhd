@@ -31,4 +31,23 @@ package Mult_Components is
 	component SM_1 port (Start, CLK, LSB, Stop, Reset: BIT;
 								Init, Shift, Add, Done: out BIT);
 	end component;
+	
+	component Mult8 port (A, B: in BIT_VECTOR(3 downto 0);
+        Start, CLK, Reset: in BIT;
+		  Result: out BIT_VECTOR(7 downto 0);
+		  Done: out BIT);
+	end component;
+	
+	component QuadAnd port(A,B,C,D: in BIT;
+         Q: out BIT);
+	end component;
+	
+	component Concat port(A,B,C,D: in BIT_VECTOR(3 downto 0);
+         Q: out BIT_VECTOR(15 downto 0));
+	end component;
+	
+	component Adder16 port (A, B: in BIT_VECTOR(15 downto 0);
+		Cin: in BIT; Cout: out BIT; 				
+		Sum: out BIT_VECTOR(15 downto 0));
+	end component;
 end;

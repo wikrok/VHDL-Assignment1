@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_QuadAnd_1_isim_beh.exe -prj C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_QuadAnd_1_beh.prj Test_QuadAnd_1 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_isim_beh.exe -prj C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_beh.prj Test_Mult16_1 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -6,21 +6,47 @@ Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Utils.vhd" into library work
 Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Clock_Utils.vhd" into library work
 Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mult_Components.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Full_Adder.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/DFFClr.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/SM_1.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/ShiftN.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Register8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mux8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/AllZero.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Adder8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mult8.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Concat.vhd" into library work
 Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/And4.vhd" into library work
-Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_And4_1.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Adder16.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mult16.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
 Compiling package std_logic_textio
+Compiling package env
 Compiling package utils
 Compiling package clock_utils
+Compiling package mult_components
+Compiling architecture behave of entity ShiftN [\ShiftN(200,500,700,3,0,7,0)\]
+Compiling architecture behave of entity AllZero [\AllZero(1000,7,0)\]
+Compiling architecture behave of entity Full_Adder [\Full_Adder(110,100)\]
+Compiling architecture structure of entity Adder8 [adder8_default]
+Compiling architecture behave of entity Mux8 [\Mux8(1000)\]
+Compiling architecture behave of entity DFFClr [\DFFClr(2000,2000)\]
+Compiling architecture structure of entity Register8 [register8_default]
+Compiling architecture moor of entity SM_1 [\SM_1(1000)\]
+Compiling architecture structure of entity Mult8 [mult8_default]
 Compiling architecture behave of entity QuadAnd [\QuadAnd(700)\]
-Compiling architecture structure of entity test_quadand_1
+Compiling architecture behave of entity Concat [\Concat(700)\]
+Compiling architecture structure of entity Adder16 [adder16_default]
+Compiling architecture structure of entity Mult16 [mult16_default]
+Compiling architecture structure of entity test_mult16_1
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 9 VHDL Units
-Built simulation executable C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_QuadAnd_1_isim_beh.exe
-Fuse Memory Usage: 30220 KB
-Fuse CPU Usage: 562 ms
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 35 VHDL Units
+Built simulation executable C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_isim_beh.exe
+Fuse Memory Usage: 30984 KB
+Fuse CPU Usage: 718 ms

@@ -1,0 +1,5 @@
+vhdl isim_temp "Utils.vhd"
+vhdl isim_temp "Clock_Utils.vhd"
+vhdl isim_temp "Mult_Components.vhd"
+vhdl isim_temp "And4.vhd"
+vhdl isim_temp "Test_And4_1.vhd"

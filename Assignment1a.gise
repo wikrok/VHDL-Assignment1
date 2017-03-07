@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Assignment1a.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Extender_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Mult8.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Mult8.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Mult8.lso"/>
@@ -69,10 +70,11 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SM_1_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="ShiftN.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ShiftN.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Adder16_1_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ShiftN_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Adder16_1_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_Adder16_1_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Adder16_1_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Concat_1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Concat_1_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Test_Mult8_1.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Test_Mult8_1.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Mult8_1.prj"/>
@@ -85,6 +87,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Mult8_1_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Test_Mult8_1_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Test_Mult8_1_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_QuadAnd_1_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_QuadAnd_1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_QuadAnd_1_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_QuadAnd_1_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -106,17 +112,19 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1488823712" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488898301" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1488898301">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488895105" xil_pn:in_ck="2181801410192085507" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1488895105">
+    <transform xil_pn:end_ts="1488898723" xil_pn:in_ck="6450079392957798495" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1488898723">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Adder16.vhd"/>
       <outfile xil_pn:name="Adder8.vhd"/>
       <outfile xil_pn:name="AllZero.vhd"/>
+      <outfile xil_pn:name="And4.vhd"/>
       <outfile xil_pn:name="Clock_Utils.vhd"/>
+      <outfile xil_pn:name="Concat.vhd"/>
       <outfile xil_pn:name="DFFClr.vhd"/>
       <outfile xil_pn:name="Full_Adder.vhd"/>
       <outfile xil_pn:name="Mult8.vhd"/>
@@ -126,28 +134,32 @@
       <outfile xil_pn:name="SM_1.vhd"/>
       <outfile xil_pn:name="ShiftN.vhd"/>
       <outfile xil_pn:name="Test_Adder16_1.vhd"/>
+      <outfile xil_pn:name="Test_And4_1.vhd"/>
+      <outfile xil_pn:name="Test_Concat_1.vhd"/>
       <outfile xil_pn:name="Test_Mult8_1.vhd"/>
       <outfile xil_pn:name="Utils.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1488895013" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6929265340444449267" xil_pn:start_ts="1488895013">
+    <transform xil_pn:end_ts="1488898726" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9018685837737114396" xil_pn:start_ts="1488898726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488895013" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3143489252772000907" xil_pn:start_ts="1488895013">
+    <transform xil_pn:end_ts="1488898726" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2094468329830358686" xil_pn:start_ts="1488898726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488823712" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3838381085178998563" xil_pn:start_ts="1488823712">
+    <transform xil_pn:end_ts="1488898301" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3838381085178998563" xil_pn:start_ts="1488898301">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1488895108" xil_pn:in_ck="2181801410192085507" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1488895108">
+    <transform xil_pn:end_ts="1488898726" xil_pn:in_ck="6450079392957798495" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1488898726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Adder16.vhd"/>
       <outfile xil_pn:name="Adder8.vhd"/>
       <outfile xil_pn:name="AllZero.vhd"/>
+      <outfile xil_pn:name="And4.vhd"/>
       <outfile xil_pn:name="Clock_Utils.vhd"/>
+      <outfile xil_pn:name="Concat.vhd"/>
       <outfile xil_pn:name="DFFClr.vhd"/>
       <outfile xil_pn:name="Full_Adder.vhd"/>
       <outfile xil_pn:name="Mult8.vhd"/>
@@ -157,27 +169,25 @@
       <outfile xil_pn:name="SM_1.vhd"/>
       <outfile xil_pn:name="ShiftN.vhd"/>
       <outfile xil_pn:name="Test_Adder16_1.vhd"/>
+      <outfile xil_pn:name="Test_And4_1.vhd"/>
+      <outfile xil_pn:name="Test_Concat_1.vhd"/>
       <outfile xil_pn:name="Test_Mult8_1.vhd"/>
       <outfile xil_pn:name="Utils.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1488895112" xil_pn:in_ck="2181801410192085507" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3926020714307465959" xil_pn:start_ts="1488895108">
+    <transform xil_pn:end_ts="1488898730" xil_pn:in_ck="6450079392957798495" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4058813239403547175" xil_pn:start_ts="1488898726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_Adder16_1_beh.prj"/>
-      <outfile xil_pn:name="Test_Adder16_1_isim_beh.exe"/>
+      <outfile xil_pn:name="Test_QuadAnd_1_beh.prj"/>
+      <outfile xil_pn:name="Test_QuadAnd_1_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1488895113" xil_pn:in_ck="1580913737079535021" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6573028011263932550" xil_pn:start_ts="1488895112">
+    <transform xil_pn:end_ts="1488898730" xil_pn:in_ck="-8776298800661606025" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2055118996921996596" xil_pn:start_ts="1488898730">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_Adder16_1_isim_beh.wdb"/>
+      <outfile xil_pn:name="Test_QuadAnd_1_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

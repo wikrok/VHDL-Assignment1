@@ -1,14 +1,13 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Adder16_1_isim_beh.exe -prj C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Adder16_1_beh.prj work.Test_Adder16_1 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_QuadAnd_1_isim_beh.exe -prj C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_QuadAnd_1_beh.prj Test_QuadAnd_1 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Utils.vhd" into library work
-Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Clock_Utils.vhd" into library work
-Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Mult_Components.vhd" into library work
-Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Full_Adder.vhd" into library work
-Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Adder16.vhd" into library work
-Parsing VHDL file "C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Adder16_1.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Utils.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Clock_Utils.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mult_Components.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/And4.vhd" into library work
+Parsing VHDL file "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_And4_1.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -17,12 +16,11 @@ Compiling package textio
 Compiling package std_logic_textio
 Compiling package utils
 Compiling package clock_utils
-Compiling architecture behave of entity Full_Adder [\Full_Adder(110,100)\]
-Compiling architecture structure of entity Adder16 [adder16_default]
-Compiling architecture structure of entity test_adder16_1
+Compiling architecture behave of entity QuadAnd [\QuadAnd(700)\]
+Compiling architecture structure of entity test_quadand_1
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 11 VHDL Units
-Built simulation executable C:/Users/phil/Dropbox/Uni/3rd Year/VHDL/VHDL-Assignment1-master/Test_Adder16_1_isim_beh.exe
-Fuse Memory Usage: 30412 KB
-Fuse CPU Usage: 608 ms
+Compiled 9 VHDL Units
+Built simulation executable C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_QuadAnd_1_isim_beh.exe
+Fuse Memory Usage: 30220 KB
+Fuse CPU Usage: 562 ms

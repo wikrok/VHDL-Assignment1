@@ -1,0 +1,29 @@
+Command line:
+   Test_QuadAnd_1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61650
+
+Tue Mar 07 14:58:52 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 844.263 Meg
+
+ Total Signals          : 10
+ Total Nets             : 5
+ Total Signal Drivers   : 5
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 2
+ Total Traceable Variables  : 12
+ Total Scalar Nets and Variables : 887
+Total Line Count : 16
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 1158.84 Meg
+
+Tue Mar 07 14:59:37 2017
+

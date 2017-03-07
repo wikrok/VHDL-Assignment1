@@ -1,5 +1,4 @@
-work	"Adder16.vhd"
+work	"And4.vhd"
 work	"Clock_Utils.vhd"
-work	"Full_Adder.vhd"
 work	"Mult_Components.vhd"
 work	"Utils.vhd"

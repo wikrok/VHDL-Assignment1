@@ -1,0 +1,5 @@
+vhdl work "Utils.vhd"
+vhdl work "Clock_Utils.vhd"
+vhdl work "Mult_Components.vhd"
+vhdl work "And4.vhd"
+vhdl work "Test_And4_1.vhd"

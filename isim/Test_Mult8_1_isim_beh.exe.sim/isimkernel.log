@@ -1,0 +1,29 @@
+Command line:
+   Test_Mult8_1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53737
+
+Sun Mar 12 18:02:52 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 843.788 Meg
+
+ Total Signals          : 160
+ Total Nets             : 98
+ Total Signal Drivers   : 61
+ Total Blocks           : 55
+ Total Primitive Blocks : 27
+ Total Processes        : 57
+ Total Traceable Variables  : 69
+ Total Scalar Nets and Variables : 1100
+Total Line Count : 126
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 686.502 Meg
+
+Sun Mar 12 18:58:35 2017
+

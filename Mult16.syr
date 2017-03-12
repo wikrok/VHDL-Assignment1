@@ -1,0 +1,671 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Reading design: Mult16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Mult16.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Mult16"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : Mult16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Utils.vhd" into library work
+Parsing package <Utils>.
+Parsing package body <Utils>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Clock_Utils.vhd" into library work
+Parsing package <Clock_Utils>.
+Parsing package body <Clock_Utils>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult_Components.vhd" into library work
+Parsing package <Mult_Components>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Full_Adder.vhd" into library work
+Parsing entity <Full_Adder>.
+Parsing architecture <Behave> of entity <full_adder>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\DFFClr.vhd" into library work
+Parsing entity <DFFClr>.
+Parsing architecture <Behave> of entity <dffclr>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\SM_1.vhd" into library work
+Parsing entity <SM_1>.
+Parsing architecture <Moor> of entity <sm_1>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\ShiftN.vhd" into library work
+Parsing entity <ShiftN>.
+Parsing architecture <Behave> of entity <shiftn>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" into library work
+Parsing entity <Register8>.
+Parsing architecture <Structure> of entity <register8>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mux8.vhd" into library work
+Parsing entity <Mux8>.
+Parsing architecture <Behave> of entity <mux8>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\AllZero.vhd" into library work
+Parsing entity <AllZero>.
+Parsing architecture <Behave> of entity <allzero>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Adder8.vhd" into library work
+Parsing entity <Adder8>.
+Parsing architecture <Structure> of entity <adder8>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult8.vhd" into library work
+Parsing entity <Mult8>.
+Parsing architecture <Structure> of entity <mult8>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Concat.vhd" into library work
+Parsing entity <Concat>.
+Parsing architecture <Behave> of entity <concat>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\And4.vhd" into library work
+Parsing entity <QuadAnd>.
+Parsing architecture <Behave> of entity <quadand>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Adder16.vhd" into library work
+Parsing entity <Adder16>.
+Parsing architecture <Structure> of entity <adder16>.
+Parsing VHDL file "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult16.vhd" into library work
+Parsing entity <Mult16>.
+Parsing architecture <Structure> of entity <mult16>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Mult16> (architecture <Structure>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult16.vhd" Line 14: Using initial value "0000" for zero since it is never assigned
+
+Elaborating entity <Mult8> (architecture <Structure>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult8.vhd" Line 32: Using initial value '0' for low since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult8.vhd" Line 33: Using initial value '1' for high since it is never assigned
+
+Elaborating entity <ShiftN> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <AllZero> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Adder8> (architecture <Structure>) from library <work>.
+
+Elaborating entity <Full_Adder> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Mux8> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Register8> (architecture <Structure>) from library <work>.
+
+Elaborating entity <DFFClr> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <SM_1> (architecture <Moor>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\SM_1.vhd" Line 44: Assignment to statec ignored, since the identifier is never used
+
+Elaborating entity <QuadAnd> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Concat> (architecture <Behave>) with generics from library <work>.
+
+Elaborating entity <Adder16> (architecture <Structure>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Mult16>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult16.vhd".
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult16.vhd" line 34: Output port <Cout> of the instance <ADD_BL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult16.vhd" line 35: Output port <Cout> of the instance <ADD_BU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult16.vhd" line 36: Output port <Cout> of the instance <ADD_Out> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mult16> synthesized.
+
+Synthesizing Unit <Mult8>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult8.vhd".
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mult8.vhd" line 42: Output port <Cout> of the instance <A1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mult8> synthesized.
+
+Synthesizing Unit <ShiftN>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\ShiftN.vhd".
+    Found 8-bit register for signal <Q>.
+    Found 8-bit register for signal <Shift.St>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <ShiftN> synthesized.
+
+Synthesizing Unit <AllZero>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\AllZero.vhd".
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <AllZero> synthesized.
+
+Synthesizing Unit <Adder8>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Adder8.vhd".
+    Summary:
+	no macro.
+Unit <Adder8> synthesized.
+
+Synthesizing Unit <Full_Adder>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Full_Adder.vhd".
+    Summary:
+Unit <Full_Adder> synthesized.
+
+Synthesizing Unit <Mux8>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Mux8.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8> synthesized.
+
+Synthesizing Unit <Register8>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd".
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[7].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[6].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[5].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[4].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[3].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[2].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[1].FF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Register8.vhd" line 39: Output port <QB> of the instance <STAGES[0].FF> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Register8> synthesized.
+
+Synthesizing Unit <DFFClr>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\DFFClr.vhd".
+    Found 1-bit register for signal <Qi>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFFClr> synthesized.
+
+Synthesizing Unit <SM_1>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\SM_1.vhd".
+    Found 3-bit register for signal <State>.
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | e                                              |
+    | Power Up State     | i                                              |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <SM_1> synthesized.
+
+Synthesizing Unit <QuadAnd>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\And4.vhd".
+    Summary:
+	no macro.
+Unit <QuadAnd> synthesized.
+
+Synthesizing Unit <Concat>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Concat.vhd".
+    Summary:
+	no macro.
+Unit <Concat> synthesized.
+
+Synthesizing Unit <Adder16>.
+    Related source file is "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Adder16.vhd".
+INFO:Xst:3210 - "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\Adder16.vhd" line 54: Output port <Cout> of the instance <Stages[15].OtherBits.FA> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Adder16> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 48
+ 1-bit register                                        : 32
+ 8-bit register                                        : 16
+# Multiplexers                                         : 56
+ 1-bit 2-to-1 multiplexer                              : 28
+ 8-bit 2-to-1 multiplexer                              : 28
+# FSMs                                                 : 4
+# Xors                                                 : 160
+ 1-bit xor2                                            : 160
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Multiplexers                                         : 56
+ 1-bit 2-to-1 multiplexer                              : 28
+ 8-bit 2-to-1 multiplexer                              : 28
+# FSMs                                                 : 4
+# Xors                                                 : 160
+ 1-bit xor2                                            : 160
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <M_ALBL/FSM_0> on signal <State[1:3]> with sequential encoding.
+Optimizing FSM <M_AUBL/FSM_0> on signal <State[1:3]> with sequential encoding.
+Optimizing FSM <M_ALBU/FSM_0> on signal <State[1:3]> with sequential encoding.
+Optimizing FSM <M_AUBU/FSM_0> on signal <State[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ i     | 001
+ c     | 010
+ a     | 100
+ s     | 011
+ e     | 000
+-------------------
+INFO:Xst:2261 - The FF/Latch <Shift.St_1> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_1> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_2> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_2> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_3> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_3> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_4> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_4> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_5> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_5> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_0> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_0> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_6> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_6> 
+INFO:Xst:2261 - The FF/Latch <Shift.St_7> in Unit <ShiftN> is equivalent to the following FF/Latch, which will be removed : <Q_7> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    F1/State_FSM_FFd3 in unit <Mult8>
+
+
+Optimizing unit <Register8> ...
+
+Optimizing unit <Mult16> ...
+
+Optimizing unit <Mult8> ...
+
+Optimizing unit <ShiftN> ...
+
+Optimizing unit <Adder8> ...
+
+Optimizing unit <Adder16> ...
+WARNING:Xst:1293 - FF/Latch <M_ALBL/SR1/Shift.St_7> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBL/SR1/Shift.St_6> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBL/SR1/Shift.St_5> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBL/SR1/Shift.St_4> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBL/SR1/Shift.St_7> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBL/SR1/Shift.St_6> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBL/SR1/Shift.St_5> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBL/SR1/Shift.St_4> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBU/SR1/Shift.St_7> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBU/SR1/Shift.St_6> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBU/SR1/Shift.St_5> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_ALBU/SR1/Shift.St_4> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBU/SR1/Shift.St_7> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBU/SR1/Shift.St_6> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBU/SR1/Shift.St_5> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_AUBU/SR1/Shift.St_4> has a constant value of 0 in block <Mult16>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <M_ALBU/F1/State_FSM_FFd1> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/F1/State_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <M_ALBU/F1/State_FSM_FFd2> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/F1/State_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <M_ALBU/F1/State_FSM_FFd3> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/F1/State_FSM_FFd3> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/SR1/Shift.St_0> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/SR1/Shift.St_0> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/SR1/Shift.St_1> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/SR1/Shift.St_1> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/SR1/Shift.St_2> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/SR1/Shift.St_2> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/SR1/Shift.St_3> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/SR1/Shift.St_3> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/F1/State_FSM_FFd1> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/F1/State_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/F1/State_FSM_FFd2> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/F1/State_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <M_AUBU/F1/State_FSM_FFd3> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_AUBL/F1/State_FSM_FFd3> 
+INFO:Xst:2261 - The FF/Latch <M_ALBU/SR1/Shift.St_0> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/SR1/Shift.St_0> 
+INFO:Xst:2261 - The FF/Latch <M_ALBU/SR1/Shift.St_1> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/SR1/Shift.St_1> 
+INFO:Xst:2261 - The FF/Latch <M_ALBU/SR1/Shift.St_2> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/SR1/Shift.St_2> 
+INFO:Xst:2261 - The FF/Latch <M_ALBU/SR1/Shift.St_3> in Unit <Mult16> is equivalent to the following FF/Latch, which will be removed : <M_ALBL/SR1/Shift.St_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Mult16, actual ratio is 1.
+WARNING:Xst:1426 - The value init of the FF/Latch M_AUBU/F1/State_FSM_FFd3_LD hinder the constant cleaning in the block Mult16.
+   You should achieve better results by setting this init to 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Mult16.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 148
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 8
+#      LUT4                        : 24
+#      LUT5                        : 48
+#      LUT6                        : 66
+# FlipFlops/Latches                : 81
+#      FD                          : 2
+#      FDC                         : 78
+#      LD                          : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 18
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              81  out of  18224     0%  
+ Number of Slice LUTs:                  147  out of   9112     1%  
+    Number used as Logic:               147  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    149
+   Number with an unused Flip Flop:      68  out of    149    45%  
+   Number with an unused LUT:             2  out of    149     1%  
+   Number of fully used LUT-FF pairs:    79  out of    149    53%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    232    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 80    |
+Reset                              | IBUF+BUFG              | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.222ns (Maximum Frequency: 236.855MHz)
+   Minimum input arrival time before clock: 5.440ns
+   Maximum output required time after clock: 12.456ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.222ns (frequency: 236.855MHz)
+  Total number of paths / destination ports: 758 / 112
+-------------------------------------------------------------------------
+Delay:               4.222ns (Levels of Logic = 3)
+  Source:            M_AUBL/R1/STAGES[1].FF/Qi (FF)
+  Destination:       M_AUBL/R1/STAGES[7].FF/Qi (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: M_AUBL/R1/STAGES[1].FF/Qi to M_AUBL/R1/STAGES[7].FF/Qi
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.525   1.104  M_AUBL/R1/STAGES[1].FF/Qi (M_AUBL/R1/STAGES[1].FF/Qi)
+     LUT4:I1->O            5   0.235   1.069  M_AUBL/A1/Stages[2].OtherBits.FA/Mxor_Sum_xo<0>21 (M_AUBL/A1/Stages[2].OtherBits.FA/Mxor_Sum_xo<0>2)
+     LUT5:I2->O            2   0.235   0.726  M_AUBL/A1/Stages[6].OtherBits.FA/Mxor_Sum_xo<0>11 (M_AUBL/A1/Stages[6].OtherBits.FA/Mxor_Sum_xo<0>1)
+     LUT4:I3->O            1   0.254   0.000  M_AUBL/M1/Mmux_Y71 (M_AUBL/MUXout<6>)
+     FDC:D                     0.074          M_AUBL/R1/STAGES[6].FF/Qi
+    ----------------------------------------
+    Total                      4.222ns (1.323ns logic, 2.899ns route)
+                                       (31.3% logic, 68.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 106 / 106
+-------------------------------------------------------------------------
+Offset:              5.440ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       M_ALBL/R1/STAGES[7].FF/Qi (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Reset to M_ALBL/R1/STAGES[7].FF/Qi
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   1.328   2.218  Reset_IBUF (Reset_IBUF)
+     LUT5:I0->O           16   0.254   1.181  M_AUBU/REGclr1 (M_AUBL/REGclr)
+     FDC:CLR                   0.459          M_AUBL/R1/STAGES[0].FF/Qi
+    ----------------------------------------
+    Total                      5.440ns (2.041ns logic, 3.399ns route)
+                                       (37.5% logic, 62.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 657 / 17
+-------------------------------------------------------------------------
+Offset:              12.456ns (Levels of Logic = 8)
+  Source:            M_ALBL/R1/STAGES[5].FF/Qi (FF)
+  Destination:       Result<15> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: M_ALBL/R1/STAGES[5].FF/Qi to Result<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.525   1.186  M_ALBL/R1/STAGES[5].FF/Qi (M_ALBL/R1/STAGES[5].FF/Qi)
+     LUT4:I0->O            3   0.254   0.874  ADD_BL/Stages[5].OtherBits.FA/Cout1 (ADD_BL/C<5>)
+     LUT5:I3->O            2   0.250   1.002  ADD_BL/Stages[7].OtherBits.FA/Mxor_Sum_xo<0>1 (ADD_Out_BL<7>)
+     LUT5:I1->O            3   0.254   0.874  ADD_Out/Stages[7].OtherBits.FA/Cout1 (ADD_Out/C<7>)
+     LUT6:I4->O            3   0.250   1.042  ADD_Out/Stages[9].OtherBits.FA/Cout1 (ADD_Out/C<9>)
+     LUT6:I2->O            4   0.254   0.804  ADD_Out/Stages[11].OtherBits.FA/Cout1 (ADD_Out/C<11>)
+     LUT5:I4->O            1   0.254   0.790  ADD_Out/Stages[13].OtherBits.FA/Cout1 (ADD_Out/C<13>)
+     LUT6:I4->O            1   0.250   0.681  ADD_Out/Stages[15].OtherBits.FA/Mxor_Sum_xo<0>1 (Result_15_OBUF)
+     OBUF:I->O                 2.912          Result_15_OBUF (Result<15>)
+    ----------------------------------------
+    Total                     12.456ns (5.203ns logic, 7.253ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Reset'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              7.872ns (Levels of Logic = 3)
+  Source:            M_AUBU/F1/State_FSM_FFd3_LD (LATCH)
+  Destination:       Done (PAD)
+  Source Clock:      Reset falling
+
+  Data Path: M_AUBU/F1/State_FSM_FFd3_LD to Done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              30   0.581   1.715  M_AUBU/F1/State_FSM_FFd3_LD (M_AUBU/F1/State_FSM_FFd3_LD)
+     LUT3:I0->O           11   0.235   1.494  M_ALBU/F1/State_FSM_FFd31 (M_ALBU/F1/State_FSM_FFd3)
+     LUT6:I0->O            1   0.254   0.681  D_AND/Q1 (Done_OBUF)
+     OBUF:I->O                 2.912          Done_OBUF (Done)
+    ----------------------------------------
+    Total                      7.872ns (3.982ns logic, 3.890ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.222|         |         |         |
+Reset          |         |    4.238|         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.30 secs
+ 
+--> 
+
+Total memory usage is 280520 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :   35 (   0 filtered)
+

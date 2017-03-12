@@ -31,7 +31,9 @@ USE ieee.std_logic_textio.ALL;
 USE std.textio.ALL;
 use std.env.all;
  
-entity Test_Mult16_1 is end; -- runs forever, use break!!
+entity Test_Mult16_1 is 
+	generic (TEST_FILE : string := "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\mult16_output.txt");
+end Test_Mult16_1; -- runs forever, use break!!
 architecture Structure of Test_Mult16_1 is
 use Work.Utils.all; use Work.Clock_Utils.all;
 	component Mult16 port
@@ -44,6 +46,7 @@ use Work.Utils.all; use Work.Clock_Utils.all;
 	signal Result : BIT_VECTOR(15 downto 0);
 	signal DA, DB, DR : INTEGER range 0 to 65535;
 
+	file test_results : TEXT open WRITE_MODE is TEST_FILE;
 
 
 begin
@@ -55,6 +58,7 @@ begin
 my_process : process is 
 	variable my_line : line;
 	begin
+	writeline(OUTPUT, my_line);
 		for i in 0 to 255 loop 
 			for j in 0 to 255 loop
 				DA <= i; DB <= j;
@@ -63,15 +67,25 @@ my_process : process is
 				wait until CLK'EVENT and CLK='1'; 
 				wait for 1 ns;
 				
+				write(my_line, A);
+				write(my_line, ",");
+				write(my_line, B);
+				write(my_line, ",");
+				
 				Start <= '1', '0' after 20 ns;
+
+				write(my_line, time'IMAGE(now) ); -- Writes the sim time at the start of the calculation
+				write(my_line, ",");
 				
 				wait until Done = '1';
-				write(my_line, Result);
-				writeline(OUTPUT, my_line);
 				wait until CLK'EVENT and CLK='1';
+				write(my_line, time'IMAGE(now) ); -- Writes the sim time at the end of the calculation
+				write(my_line, ",");
+				write(my_line, Result);
+				writeline(test_results, my_line);
 
 			end loop; 
 		end loop;
-		wait for 1000 us;
+		wait for 100000 us;
 	end process my_process;
 end;

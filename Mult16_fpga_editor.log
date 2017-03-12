@@ -1,0 +1,41 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\phil\Documents\GitHub\VHDL-Assignment1
+#Date/Time:
+#:T   Tue Mar 07 19:09:23 2017
+#------------------------------
+	#Reading Mult16.ncd...
+	#Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "Mult16" is an NCD, version 3.2, device xc6slx16, package csg324, speed -2
+	#Design creation date: 2017.03.07.19.07.47
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select comp 'M_ALBU/F1/State_FSM_FFd1'
+	#comp "M_ALBU/F1/State_FSM_FFd1",  site "SLICE_X8Y5",  type = SLICEX  (RPM grid X29Y20)
+	#4
+unselect -all
+	#5
+select comp 'M_ALBU/F1/State_FSM_FFd1'
+	#comp "M_ALBU/F1/State_FSM_FFd1",  site "SLICE_X8Y5",  type = SLICEX  (RPM grid X29Y20)
+	#6
+post block
+	#7
+unselect -all
+	#8
+select comp 'M_AUBU/SR2/Shift.St<7>'
+	#comp "M_AUBU/SR2/Shift.St<7>",  site "SLICE_X5Y5",  type = SLICEX  (RPM grid X19Y20)
+	#9
+unselect -all
+	#10
+select comp 'M_AUBU/SR2/Shift.St<7>'
+	#comp "M_AUBU/SR2/Shift.St<7>",  site "SLICE_X5Y5",  type = SLICEX  (RPM grid X19Y20)
+	#11
+post block

@@ -14,14 +14,14 @@
 
 struct XSI_INFO xsi_info;
 
-char *WORK_P_3522511901;
-char *WORK_P_0439776357;
-char *WORK_P_1523393414;
-char *STD_ENV;
-char *STD_STANDARD;
-char *STD_TEXTIO;
 char *IEEE_P_2592010699;
 char *IEEE_P_3564397177;
+char *STD_ENV;
+char *STD_TEXTIO;
+char *WORK_P_3522511901;
+char *WORK_P_1523393414;
+char *STD_STANDARD;
+char *WORK_P_0439776357;
 
 
 int main(int argc, char **argv)
@@ -55,15 +55,15 @@ int main(int argc, char **argv)
 
     xsi_register_tops("work_a_0978286156_0632001823");
 
-    WORK_P_3522511901 = xsi_get_engine_memory("work_p_3522511901");
-    WORK_P_0439776357 = xsi_get_engine_memory("work_p_0439776357");
-    WORK_P_1523393414 = xsi_get_engine_memory("work_p_1523393414");
-    STD_ENV = xsi_get_engine_memory("std_env");
-    STD_STANDARD = xsi_get_engine_memory("std_standard");
-    STD_TEXTIO = xsi_get_engine_memory("std_textio");
     IEEE_P_2592010699 = xsi_get_engine_memory("ieee_p_2592010699");
     xsi_register_ieee_std_logic_1164(IEEE_P_2592010699);
     IEEE_P_3564397177 = xsi_get_engine_memory("ieee_p_3564397177");
+    STD_ENV = xsi_get_engine_memory("std_env");
+    STD_TEXTIO = xsi_get_engine_memory("std_textio");
+    WORK_P_3522511901 = xsi_get_engine_memory("work_p_3522511901");
+    WORK_P_1523393414 = xsi_get_engine_memory("work_p_1523393414");
+    STD_STANDARD = xsi_get_engine_memory("std_standard");
+    WORK_P_0439776357 = xsi_get_engine_memory("work_p_0439776357");
 
     return xsi_run_simulation(argc, argv);
 

@@ -30,7 +30,9 @@ USE ieee.std_logic_1164.ALL;
 USE ieee.std_logic_textio.ALL; 
 USE std.textio.ALL;
  
-entity Test_Mult8_1 is end; -- runs forever, use break!!
+entity Test_Mult8_1 is
+	generic (TEST_FILE : string := "C:\Users\phil\Documents\GitHub\VHDL-Assignment1\mult8_output.txt");
+end Test_Mult8_1; -- runs forever, use break!!
 architecture Structure of Test_Mult8_1 is
 use Work.Utils.all; use Work.Clock_Utils.all;
 	component Mult8 port
@@ -43,6 +45,7 @@ use Work.Utils.all; use Work.Clock_Utils.all;
 	signal Result : BIT_VECTOR(7 downto 0);
 	signal DA, DB, DR : INTEGER range 0 to 255;
 
+	file test_results : TEXT open WRITE_MODE is TEST_FILE;
 
 
 begin
@@ -62,12 +65,20 @@ my_process : process is
 				wait until CLK'EVENT and CLK='1'; 
 				wait for 1 ns;
 				
+				write(my_line, A);
+				write(my_line, ",");
+				write(my_line, B);
+				write(my_line, ",");
+				write(my_line, time'IMAGE(now) ); -- Writes the sim time at the start of the calculation
 				Start <= '1', '0' after 20 ns;
-				
+				write(my_line, ",");
+								
 				wait until Done = '1';
-				write(my_line, Result);
-				writeline(OUTPUT, my_line);
+				write(my_line, time'IMAGE(now) ); -- Writes the sim time at the end of the calculation
 				wait until CLK'EVENT and CLK='1';
+				write(my_line, ",");
+				write(my_line, Result);
+				writeline(test_results, my_line);
 			end loop; 
 		end loop;
 		wait for 1000 us;

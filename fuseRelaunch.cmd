@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_isim_beh.exe" -prj "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_beh.prj" "Test_Mult16_1" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_isim_beh.exe" -prj "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Test_Mult16_1_beh.prj" "work.Test_Mult16_1" 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-07T18:57:25</DateModified>
+  <DateModified>2017-03-12T13:30:28</DateModified>
   <ModuleName>Mult16</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-03-07T19:08:11</SummaryTimeStamp>
   <SavedFilePath>C:/Users/phil/Documents/GitHub/VHDL-Assignment1/iseconfig/Mult16.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/phil/Documents/GitHub/VHDL-Assignment1</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/phil/Documents/GitHub/VHDL-Assignment1\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-07T18:57:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="Mult16_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="Mult16_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="Mult16_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="Mult16_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="Mult16_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="Mult16.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />

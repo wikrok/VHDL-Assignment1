@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mult16.xst" -ofn "C:/Users/phil/Documents/GitHub/VHDL-Assignment1/Mult16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult8.ucf -p xc6slx16-csg324-2 Mult16.ngc Mult16.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mult16_map.ncd Mult16.ngd Mult16.pcf 
+par -w -intstyle ise -ol high -mt off Mult16_map.ncd Mult16.ncd Mult16.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Mult16.twx Mult16.ncd -o Mult16.twr Mult16.pcf -ucf Mult8.ucf 

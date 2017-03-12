@@ -33,6 +33,8 @@ entity ShiftN is
 	-- SH = Shift data in DIR - active high
 	-- D = input DATA
 	-- Q = Output
+	
+	
 	port(CLK, CLR, LoaD, SH, DIR: in BIT; -- why is LoaD red?
 	     D: in BIT_VECTOR; 
 		  Q: out BIT_VECTOR);
